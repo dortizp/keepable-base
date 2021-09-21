@@ -1,0 +1,6 @@
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  z-index: -1;
+}

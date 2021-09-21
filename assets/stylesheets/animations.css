@@ -1,0 +1,52 @@
+.trashOut {
+  animation-duration: 400ms;
+  animation-name: trashOut;
+}
+
+.goBack {
+  animation-duration: 400ms;
+  animation-name: goBack;
+}
+
+.shrinkOut {
+  animation-duration: 400ms;
+  animation-name: shrinkOut;
+}
+
+@keyframes trashOut {
+  from {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0) rotate(360deg);
+  }
+}
+
+@keyframes goBack {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes shrinkOut {
+  from {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.5) translateY(10px);
+  }
+}

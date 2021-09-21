@@ -1,0 +1,28 @@
+:root {
+  --black: #000;
+  --black-light: #1d2128;
+  --white: #fff;
+  --grey-light: #d1d1d1;
+  --grey: #999b9e;
+  --red: #f28b82;
+  --orange: #fbbc04;
+  --yellow: #fff475;
+  --green: #ccff90;
+  --turquoise: #a7ffeb;
+  --cyan: #cbf0f8;
+  --blue: #aecbfa;
+  --purple: #d7aefb;
+  --pink: #fdcfe8;
+  --white-opacity: rgba(255, 255, 255, 0.5);
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}

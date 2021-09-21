@@ -1,0 +1,100 @@
+.tooltip {
+  position: relative;
+}
+.tooltip-trigger {
+  color: var(--white);
+  background: var(--white-opacity);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  text-align: center;
+  transition: 300ms background;
+}
+
+.tooltip-trigger .ri-palette-fill {
+  color: var(--grey);
+  transition: 300ms color;
+}
+
+.tooltip-trigger:hover {
+  background: var(--grey);
+}
+
+.tooltip-trigger:hover .ri-palette-fill {
+  color: var(--white);
+}
+
+.tooltip-content {
+  position: absolute;
+  left: -150%;
+  bottom: 85%;
+  padding-bottom: 10px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: 200ms 100ms opacity, 300ms 100ms transform;
+}
+
+.tooltip-content__body {
+  width: 155px;
+  height: 65px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background: var(--white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.tooltip-option {
+  display: block;
+  background: var(--white);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  align-self: center;
+  justify-self: center;
+  filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0));
+  transition: 200ms all;
+}
+
+.tooltip-option:hover {
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
+}
+
+.tooltip-option--white {
+  border: 1px solid var(--grey);
+}
+.tooltip-option--red {
+  background-color: var(--red);
+}
+.tooltip-option--orange {
+  background-color: var(--orange);
+}
+.tooltip-option--yellow {
+  background-color: var(--yellow);
+}
+.tooltip-option--green {
+  background-color: var(--green);
+}
+.tooltip-option--turquoise {
+  background-color: var(--turquoise);
+}
+.tooltip-option--cyan {
+  background-color: var(--cyan);
+}
+.tooltip-option--blue {
+  background-color: var(--blue);
+}
+.tooltip-option--purple {
+  background-color: var(--purple);
+}
+.tooltip-option--pink {
+  background-color: var(--pink);
+}

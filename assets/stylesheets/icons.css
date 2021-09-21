@@ -1,0 +1,109 @@
+.icon {
+  width: 18px;
+  height: 18px;
+  color: transparent;
+  display: block;
+  position: relative;
+}
+
+.trash {
+  position: relative;
+}
+
+.trash i {
+  pointer-events: none;
+}
+
+.trash-trigger {
+  color: var(--white);
+  background: var(--white-opacity);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  text-align: center;
+  transition: 300ms background;
+}
+
+.trash-trigger .ri-delete-bin-fill {
+  color: var(--grey);
+  transition: 300ms color;
+}
+
+.trash-trigger:hover {
+  background: var(--grey);
+}
+
+.trash-trigger:hover .ri-delete-bin-fill {
+  color: var(--white);
+}
+
+.delete {
+  position: relative;
+}
+
+.delete i {
+  pointer-events: none;
+}
+
+.delete-trigger {
+  color: var(--white);
+  background: var(--white-opacity);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  text-align: center;
+  transition: 300ms background;
+}
+
+.delete-trigger .ri-delete-bin-fill {
+  color: var(--grey);
+  transition: 300ms color;
+}
+
+.delete-trigger:hover {
+  background: var(--grey);
+}
+
+.delete-trigger:hover .ri-delete-bin-fill {
+  color: var(--white);
+}
+
+.restore {
+  position: relative;
+}
+
+.restore i {
+  pointer-events: none;
+}
+
+.restore-trigger {
+  color: var(--white);
+  background: var(--white-opacity);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  text-align: center;
+  transition: 300ms background;
+}
+
+.restore-trigger .ri-arrow-go-back-fill {
+  color: var(--grey);
+  transition: 300ms color;
+}
+
+.restore-trigger:hover {
+  background: var(--grey);
+}
+
+.restore-trigger:hover .ri-arrow-go-back-fill {
+  color: var(--white);
+}

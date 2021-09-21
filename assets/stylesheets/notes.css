@@ -1,0 +1,64 @@
+.notes {
+  margin-top: 24px;
+  padding: 0 30px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notes ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, max-content));
+  grid-gap: 25px;
+  justify-content: center;
+  padding: initial;
+  width: 100%;
+}
+
+.notes--no-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+.notes--no-content h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: var(--white);
+}
+
+.note {
+  width: 260px;
+  height: 260px;
+  border-radius: 8px;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 20px 1fr 40px;
+}
+
+.note-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: var(--black);
+}
+
+.note-body {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: var(--black);
+  overflow: hidden;
+}
+
+.note footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 9px;
+}
